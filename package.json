@@ -1,0 +1,17 @@
+{
+  "name": "json-diff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:atkinchris/json-diff.git",
+  "author": "Chris Atkin <atkinchris@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "http-server": "^0.9.0"
+  }
+}

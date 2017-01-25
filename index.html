@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSON Diff</title>
+    <link rel="stylesheet" href="assets/layout.css">
+    <script src="assets/lib/diff.js"></script>
+    <script src="assets/process-json.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" onsubmit="event.preventDefault(); processJson()">
+        <input class="form_input form_input--text" type="text" id="json" />
+        <input class="form_input form_input--submit" type="submit" value="Diff">
+      </form>
+      <pre id="display"></pre>
+    </div>
+  </body>
+</html>
