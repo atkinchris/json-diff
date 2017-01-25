@@ -38,6 +38,7 @@ html, body {
 
 #display {
   background: #EFEFEF;
+  margin: 1em 0 0;
   padding: 1em;
   flex: 1;
 }
