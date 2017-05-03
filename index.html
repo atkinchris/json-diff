@@ -11,6 +11,10 @@
     <div class="container">
       <form class="form" onsubmit="event.preventDefault(); processJson()">
         <input class="form_input form_input--text" type="text" id="json" placeholder="JSON String" autofocus />
+        <select class="form_input form_input--select" id="regex">
+          <option value=" was not equal to ">Simple</option>
+          <option value='}([^{},"]*){'>Complex</option>
+        </select>
         <input class="form_input form_input--submit" type="submit" value="Diff">
       </form>
       <pre id="display"></pre>

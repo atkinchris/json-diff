@@ -1,8 +1,9 @@
 window.processJson = function processJson() {
   var input = document.getElementById('json').value
-  var regex = /}([^{},"]*){/.exec(input)
+  var regexOption = document.getElementById('regex').value
+  var regex = RegExp(regexOption).exec(input)
 
-  var objects = String(input).split(regex[1])
+  var objects = String(input).split(regex[regex.length - 1])
   var diff = JsDiff.diffJson(
     JSON.parse(objects[0]),
     JSON.parse(objects[1])

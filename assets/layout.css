@@ -12,14 +12,14 @@ html, body {
 .container {
   height: 100%;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
 }
 
 .form {
   display: flex;
   align-items: center;
+  height: 3vh;
+
+  min-height: 2em;
 }
 
 .form_input {
@@ -33,6 +33,10 @@ html, body {
 
 .form_input--text {
   flex: 1;
+}
+
+.form_input--text,
+.form_input--select {
   margin-right: 1em;
 }
 
@@ -40,5 +44,7 @@ html, body {
   background: #EFEFEF;
   margin: 1em 0 0;
   padding: 1em;
-  flex: 1;
+  height: 93vh;
+
+  overflow: scroll;
 }
