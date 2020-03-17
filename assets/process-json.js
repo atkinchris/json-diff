@@ -1,3 +1,5 @@
+'use strict'
+
 window.processJson = function processJson() {
   var input = document.getElementById('json').value
   var regexOption = document.getElementById('regex').value
